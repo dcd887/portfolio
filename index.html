@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄谦 · 作品集</title>
+<style>
+  :root {
+    --bg: #101214;
+    --card: #181b1f;
+    --border: #262a30;
+    --text: #e8e6e1;
+    --dim: #9a978f;
+    --accent: #a63a2a;
+    --accent-soft: rgba(166, 58, 42, 0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    line-height: 1.6;
+    padding: 0 20px 60px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header { padding: 56px 0 36px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+  header h1 { font-size: 2rem; letter-spacing: 0.02em; }
+  header .tagline { color: var(--accent); font-size: 1.05rem; margin-top: 6px; font-weight: 600; }
+  header .contact { margin-top: 14px; font-size: 0.95rem; color: var(--dim); }
+  header .contact a { color: var(--dim); text-decoration: none; border-bottom: 1px dotted var(--dim); }
+  header .contact a:hover { color: var(--text); }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } header { padding-top: 40px; } }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 22px 18px;
+    display: flex; flex-direction: column;
+  }
+  .card h2 { font-size: 1.15rem; margin-bottom: 6px; }
+  .card .desc { color: var(--dim); font-size: 0.92rem; margin-bottom: 14px; }
+  .nums { margin: 0 0 16px; list-style: none; }
+  .nums li { font-size: 0.92rem; padding: 3px 0; }
+  .nums b { color: var(--accent); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+  .card .go {
+    margin-top: auto;
+    display: inline-block; align-self: flex-start;
+    background: var(--accent-soft); color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 7px 18px; border-radius: 6px;
+    text-decoration: none; font-size: 0.9rem; font-weight: 600;
+  }
+  .card .go:hover { background: var(--accent); color: #fff; }
+  .card .go.plain { color: var(--dim); border-color: var(--border); background: none; }
+
+  .resume {
+    margin-top: 18px;
+    background: var(--accent-soft);
+    border: 1px dashed var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  }
+  .resume .t { font-size: 1rem; font-weight: 600; }
+  .resume .s { color: var(--dim); font-size: 0.88rem; }
+
+  footer { margin-top: 40px; color: var(--dim); font-size: 0.82rem; text-align: center; }
+  footer .qr { margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>黄谦</h1>
+    <div class="tagline">海关稽查 × AI 工程 —— 把海关业务做成能跑的系统</div>
+    <div class="contact">
+      <a href="mailto:hq15012670635@163.com">hq15012670635@163.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/dcd887" target="_blank" rel="noopener">github.com/dcd887</a>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>关盾 Agent</h2>
+      <div class="desc">海关商品归类 AI 助手 · ModelScope 公开体验 551 次浏览</div>
+      <ul class="nums">
+        <li><b>1956</b> 条归类决定知识库（RAG）</li>
+        <li><b>26</b> 条边界规则 · <b>146</b> 条测试用例全通过</li>
+        <li><b>9</b> 轮迭代 93.8% → 100%</li>
+      </ul>
+      <!-- TODO: 填链接（确认后替换） -->
+      <a class="go" href="https://www.modelscope.cn/studios/dcd887/guandun-agent" target="_blank" rel="noopener">查看 →</a>
+    </div>
+
+    <div class="card">
+      <h2>税则通</h2>
+      <div class="desc">海关商品归类查询微信小程序</div>
+      <ul class="nums">
+        <li><b>8972</b> 条 2026 版商品编码</li>
+        <li><b>215</b> 道全品类测试 100%</li>
+        <li><b>已 ICP 备案</b>，正式上线</li>
+      </ul>
+      <!-- TODO: 小程序无网页链接，按钮改为引导文案 -->
+      <span class="go plain">微信小程序搜索「税则通」</span>
+    </div>
+
+    <div class="card">
+      <h2>mcqa</h2>
+      <div class="desc">Minecraft 整合包自动化 QA 框架</div>
+      <ul class="nums">
+        <li><b>18</b> 条自动化用例 · <b>14</b> 通过</li>
+        <li>运行期异常 <b>140,083 → 0</b></li>
+        <li>最小修复 <b>30</b> 行</li>
+      </ul>
+      <a class="go" href="https://github.com/dcd887/mcqa" target="_blank" rel="noopener">查看代码 →</a>
+    </div>
+
+    <div class="card">
+      <h2>红楼推理 / 典藏司</h2>
+      <div class="desc">文本考据型交互作品（网页游戏）</div>
+      <ul class="nums">
+        <li><b>5</b> 幕 / <b>10</b> 幕，浏览器即开即玩</li>
+        <li>程甲本 <b>39</b> 条引文逐字核对</li>
+        <li>典藏司 <b>10</b> 套独立机关机制</li>
+      </ul>
+      <a class="go" href="https://dcd887.github.io/honglou-tuili/" target="_blank" rel="noopener">查看 →</a>
+    </div>
+
+  </div>
+
+  <div class="resume">
+    <div>
+      <div class="t">简历下载</div>
+      <div class="s">PDF 版简历（含项目明细与数据来源）</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="go" href="resume-guard.pdf" target="_blank" rel="noopener">关务版 PDF →</a>
+      <a class="go" href="resume-tech.pdf" target="_blank" rel="noopener">技术版 PDF →</a>
+    </div>
+  </div>
+
+  <footer>
+    本页所有数字均可在对应项目文档中核对 · 简历两版可按岗位取用
+    <div class="qr"><!-- TODO: 预留二维码位（如需放个人二维码图片，替换此处为 <img>，图片请与页面同仓库存放以保持零外链） --></div>
+  </footer>
+
+</div>
+</body>
+</html>
+<!--
+==================== 上线步骤（GitHub Pages，3 步） ====================
+1. 在 GitHub 新建仓库（如 portfolio），把本文件重命名为 index.html 放进仓库根目录
+2. 仓库 Settings → Pages → Source 选 "Deploy from a branch" → 选 main 分支 / (root) 目录 → Save
+3. 等待 1-2 分钟，访问 https://dcd887.github.io/portfolio/ 即为线上地址
+   （简历二维码直接指向这个地址）
+=======================================================================
+-->
