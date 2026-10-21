@@ -147,8 +147,8 @@
       <div class="s">PDF 版简历（含项目明细与数据来源）</div>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <a class="go" href="resume-guard.pdf" target="_blank" rel="noopener">关务版 PDF →</a>
-      <a class="go" href="resume-tech.pdf" target="_blank" rel="noopener">技术版 PDF →</a>
+      <a class="go" href="#" data-cv="cva-4929af0035.pdf">关务版 PDF →</a>
+      <a class="go" href="#" data-cv="cvb-219c2a827f.pdf">技术版 PDF →</a>
     </div>
   </div>
 
@@ -158,6 +158,15 @@
   </footer>
 
 </div>
+<script>
+// 简历 PDF 不做直链（避免被搜索引擎抓取），点击时才跳转
+document.querySelectorAll('a[data-cv]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.open(a.getAttribute('data-cv'), '_blank', 'noopener');
+  });
+});
+</script>
 </body>
 </html>
 <!--
