@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全部项目 · 黄谦</title>
+<link rel="icon" href="favicon.ico">
+<style>
+  :root{--bg:#101214;--card:#181b1f;--border:#262a30;--text:#e8e6e1;--dim:#9a978f;--accent:#a63a2a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);line-height:1.65;padding:0 20px 70px;
+       font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+  .wrap{max-width:960px;margin:0 auto}
+  header{padding:52px 0 28px;border-bottom:1px solid var(--border);margin-bottom:26px}
+  h1{font-size:1.7rem;letter-spacing:.02em}
+  .sub{color:var(--accent);font-weight:600;margin-top:6px}
+  .back{color:var(--dim);font-size:.9rem;text-decoration:none;border-bottom:1px dotted var(--dim)}
+  .back:hover{color:var(--text)}
+  h2{font-size:1.05rem;margin:34px 0 14px;padding-left:10px;border-left:3px solid var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr}header{padding-top:36px}}
+  .repo{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:16px 18px}
+  .rh{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px}
+  .rh h3{font-size:.98rem;font-weight:600;word-break:break-all}
+  .rh h3 a{color:var(--text);text-decoration:none}
+  .rh h3 a:hover{color:var(--accent)}
+  .repo p{color:var(--dim);font-size:.86rem;margin-bottom:9px}
+  .tag{font-size:.7rem;padding:2px 7px;border-radius:4px;border:1px solid var(--border);
+       color:var(--dim);white-space:nowrap;flex-shrink:0}
+  .tag.live{color:#7ec98a;border-color:#2f4a34}
+  .tag.wip{color:#d8a44a;border-color:#4a3f2a}
+  .tps{margin-bottom:8px}
+  .tp{display:inline-block;font-size:.68rem;color:var(--dim);background:#20242a;
+      border-radius:3px;padding:1px 6px;margin:0 5px 4px 0}
+  .meta{font-size:.72rem;color:#6f6c66}
+  footer{margin-top:44px;color:var(--dim);font-size:.8rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="./">← 返回作品集</a>
+    <h1>全部项目</h1>
+    <div class="sub">29 个仓库 · 12 个线上可访问站点 · 生成于 2026-10-24 17:50</div>
+  </header>
+  <h2>海关 / 合规业务<span class="cnt">5</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3>hs-code-assistant</h3><span class="tag">仓库</span></div>
+      <p>税则通 - 海关商品编码与税率查询工具，微信小程序 + FastAPI后端 + 8972条2026完整税则数据库</p>
+      <div class="tps"><span class="tp">customs</span><span class="tp">fastapi</span><span class="tp">hs-code</span><span class="tp">llm</span><span class="tp">rag</span><span class="tp">wechat-miniprogram</span></div>
+      <div class="meta">Python · 2026-10-24</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>guandun-agent</h3><span class="tag">仓库</span></div>
+      <p>海关商品归类 AI 助手：证据链硬约束 + 多模型降级 + 146 项可复现测试</p>
+      <div class="tps"><span class="tp">ai-agent</span><span class="tp">customs</span><span class="tp">evidence-based</span><span class="tp">fastapi</span><span class="tp">hs-code</span><span class="tp">llm</span></div>
+      <div class="meta">Python · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/risk-helper/" target="_blank" rel="noopener">risk-helper</a></h3><span class="tag live">线上可访问</span></div>
+      <p>风险小帮手 · 报关合规自查（纯前端离线版，零后端零 Key，数据不出本机）</p>
+      <div class="tps"><span class="tp">compliance</span><span class="tp">customs</span><span class="tp">github-pages</span><span class="tp">hs-code</span><span class="tp">no-backend</span><span class="tp">offline-first</span></div>
+      <div class="meta">JavaScript · 2026-10-24</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/hs-code-api-website/" target="_blank" rel="noopener">hs-code-api-website</a></h3><span class="tag live">线上可访问</span></div>
+      <p>HS Code Classifier API official website with product page, privacy policy, and terms of service</p>
+      <div class="tps"><span class="tp">api</span><span class="tp">customs</span><span class="tp">github-pages</span><span class="tp">hs-code</span><span class="tp">html</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>hs-code-mcp-server</h3><span class="tag">仓库</span></div>
+      <p>HS Code (海关商品编码) MCP Server - 基于2026年进出口税则的商品归类、税费计算MCP工具服务器，支持8972条税则条目、1228个品目描述100%覆盖</p>
+      <div class="tps"><span class="tp">agent</span><span class="tp">china</span><span class="tp">customs</span><span class="tp">hs-code</span><span class="tp">llm</span><span class="tp">mcp</span></div>
+      <div class="meta">Python · 2026-10-10</div>
+    </div>
+  </div>
+  <h2>内容作品 · 考据推理<span class="cnt">6</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/honglou-tuili/" target="_blank" rel="noopener">honglou-tuili</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《紅樓推理》五幕 · 程甲本底本推理向单文件网页作品</p>
+      <div class="tps"><span class="tp">chinese</span><span class="tp">github-pages</span><span class="tp">interactive-fiction</span><span class="tp">literary</span><span class="tp">puzzle</span><span class="tp">single-file</span></div>
+      <div class="meta">HTML · 2026-10-22</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/classics-archive/" target="_blank" rel="noopener">classics-archive</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《典藏司》— 以公有领域古籍为底、谜题从原文里长出来的单文件解谜文游（九卷）</p>
+      <div class="tps"><span class="tp">chinese</span><span class="tp">chinese-philosophy</span><span class="tp">classics</span><span class="tp">educational-game</span><span class="tp">html5-game</span><span class="tp">interactive-fiction</span></div>
+      <div class="meta">HTML · 2026-10-22</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/classics-emergence/" target="_blank" rel="noopener">classics-emergence</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《验火》— 以公有领域古籍为底、一案多典的断案科普解谜文游（三卷十二验目 × 十典）</p>
+      <div class="tps"><span class="tp">ancient-china</span><span class="tp">chinese</span><span class="tp">chinese-history</span><span class="tp">classics</span><span class="tp">detective</span><span class="tp">detective-game</span></div>
+      <div class="meta">HTML · 2026-10-13</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/archive-hidden-lodge/" target="_blank" rel="noopener">archive-hidden-lodge</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《档案：隐庐》— 五棁连环档案解密推理游戏。</p>
+      <div class="tps"><span class="tp">chinese</span><span class="tp">detective</span><span class="tp">interactive-fiction</span><span class="tp">puzzle</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/anluo-yiyun/" target="_blank" rel="noopener">anluo-yiyun</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《案卷疑云 · 码头仓库疑案》— 纯前端 AI 推理互动小说 MVP。档案→时间线→证据链审讯→提交结论，四段式闭环，支持演示模式与 LLM 模式。</p>
+      <div class="tps"><span class="tp">ai</span><span class="tp">chinese</span><span class="tp">detective</span><span class="tp">frontend</span><span class="tp">game</span><span class="tp">interactive-fiction</span></div>
+      <div class="meta">HTML · 2026-10-10</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>hertrees-emergent</h3><span class="tag wip">开发中 · 未上线</span></div>
+      <p>规则之塔·涌现（HerTrees_MVP v3 涌现版）可玩 demo，单文件 HTML</p>
+      <div class="tps"><span class="tp">demo</span><span class="tp">emergent-gameplay</span><span class="tp">game</span><span class="tp">single-file</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+  </div>
+  <h2>小工具<span class="cnt">2</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/manga-reader/" target="_blank" rel="noopener">manga-reader</a></h3><span class="tag live">线上可访问</span></div>
+      <p>开源漫画阅读器 · MangaDex 官方开放 API 图源，单文件 H5，支持搜索/语言过滤/详情/翻页/进度记忆</p>
+      <div class="tps"><span class="tp">h5</span><span class="tp">manga</span><span class="tp">mangadex</span><span class="tp">reader</span><span class="tp">single-file</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/fitness-assistant/" target="_blank" rel="noopener">fitness-assistant</a></h3><span class="tag live">线上可访问</span></div>
+      <p>按目标与器械/身体限制生成一周训练计划（纯本地规则，数据来自 Workout Guide + free-exercise-db）</p>
+      <div class="tps"><span class="tp">fitness</span><span class="tp">html</span><span class="tp">offline</span><span class="tp">rules-engine</span><span class="tp">workout</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+  </div>
+  <h2>游戏 / 引擎<span class="cnt">3</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3>mcqa</h3><span class="tag">仓库</span></div>
+      <p>Minecraft modpack automated QA framework - KubeJS probe + log transport + pure-function Python oracle. 18 cases, 14 pass. Model never judges.</p>
+      <div class="tps"><span class="tp">automation</span><span class="tp">minecraft</span><span class="tp">modpack</span><span class="tp">python</span><span class="tp">qa</span><span class="tp">testing</span></div>
+      <div class="meta">Python · 2026-10-24</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>fleet-ai</h3><span class="tag">仓库</span></div>
+      <p>Fleet Protocol - LLM AI commander bridge server (Godot RTS)</p>
+      <div class="tps"><span class="tp">ai</span><span class="tp">game</span><span class="tp">game-ai</span><span class="tp">gamedev</span><span class="tp">godot</span><span class="tp">llm</span></div>
+      <div class="meta">Python · 2026-10-10</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/fleet-privacy/" target="_blank" rel="noopener">fleet-privacy</a></h3><span class="tag live">线上可访问</span></div>
+      <p>《舰队协议 Fleet Protocol》隐私政策（TapTap Windows 离线版）</p>
+      <div class="tps"><span class="tp">fleet-protocol</span><span class="tp">game</span><span class="tp">privacy-policy</span><span class="tp">taptap</span><span class="tp">windows</span></div>
+      <div class="meta">HTML · 2026-10-23</div>
+    </div>
+  </div>
+  <h2>MCP 服务与工具链<span class="cnt">10</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3>minecraft-mcp-server</h3><span class="tag">仓库</span></div>
+      <p>MCP server for querying Minecraft mod information and API data</p>
+      <div class="tps"><span class="tp">ftb-quests</span><span class="tp">kubejs</span><span class="tp">llm</span><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">modpack</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-modpack-mcp</h3><span class="tag">仓库</span></div>
+      <p>Minecraft modpack MCP server: build and validate modpacks, resolve mod metadata, and generate pack manifests.</p>
+      <div class="tps"><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">modpack</span><span class="tp">typescript</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-rp-assistant-mcp</h3><span class="tag">仓库</span></div>
+      <p>MCP server for reading Minecraft roleplay information and guides</p>
+      <div class="tps"><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">resource-pack</span><span class="tp">resourcepack</span><span class="tp">typescript</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-pack-builder-mcp</h3><span class="tag">仓库</span></div>
+      <p>MCP server for building and managing Minecraft modpacks</p>
+      <div class="tps"><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">modpack</span><span class="tp">modrinth</span><span class="tp">typescript</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-mod-config-mcp</h3><span class="tag">仓库</span></div>
+      <p>MCP server for reading and managing Minecraft mod configurations</p>
+      <div class="tps"><span class="tp">config</span><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">typescript</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-changelog-mcp</h3><span class="tag">仓库</span></div>
+      <p>MCP server for analyzing and generating Minecraft modpack changelogs</p>
+      <div class="tps"><span class="tp">changelog</span><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">typescript</span></div>
+      <div class="meta">TypeScript · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-translator-mcp</h3><span class="tag">仓库</span></div>
+      <p>MCP tool for automatically translating Minecraft mods to Chinese (zh_cn)</p>
+      <div class="tps"><span class="tp">llm</span><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">python</span><span class="tp">translation</span></div>
+      <div class="meta">Python · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>game-translator-mcp</h3><span class="tag">仓库</span></div>
+      <p>通用游戏汉化 MCP 工具 —— 扫描游戏目录，调用 AI 翻译，回写中文文本</p>
+      <div class="tps"><span class="tp">game</span><span class="tp">games</span><span class="tp">llm</span><span class="tp">mcp</span><span class="tp">python</span><span class="tp">translation</span></div>
+      <div class="meta">Python · 2026-10-23</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>mc-mcp-toolchain</h3><span class="tag">仓库</span></div>
+      <p>Minecraft MCP Toolchain — overview of all 6 MCP servers for modpack development workflow</p>
+      <div class="tps"><span class="tp">agent</span><span class="tp">llm</span><span class="tp">mcp</span><span class="tp">minecraft</span><span class="tp">model-context-protocol</span><span class="tp">python</span></div>
+      <div class="meta">Python · 2026-09-07</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>langchain-mcp-agent-demo</h3><span class="tag">仓库</span></div>
+      <p>LangChain + MCP Agent demo，学习用多工具调用智能体示例</p>
+      <div class="tps"><span class="tp">agent</span><span class="tp">langchain</span><span class="tp">llm</span><span class="tp">mcp</span><span class="tp">python</span></div>
+      <div class="meta">Python · 2026-10-23</div>
+    </div>
+  </div>
+  <h2>站点 / 其他<span class="cnt">3</span></h2>
+  <div class="grid">
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/portfolio/" target="_blank" rel="noopener">portfolio</a></h3><span class="tag live">线上可访问</span></div>
+      <p>Portfolio: customs AI tools, automated QA framework, interactive fiction</p>
+      <div class="tps"><span class="tp">github-pages</span><span class="tp">html</span><span class="tp">personal-site</span><span class="tp">portfolio</span></div>
+      <div class="meta">HTML · 2026-10-24</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3><a href="https://dcd887.github.io/rewriteany-privacy/" target="_blank" rel="noopener">rewriteany-privacy</a></h3><span class="tag live">线上可访问</span></div>
+      <p>Privacy policy hosting for RewriteAny extension</p>
+      <div class="tps"><span class="tp">github-pages</span><span class="tp">privacy</span><span class="tp">privacy-policy</span></div>
+      <div class="meta">HTML · 2026-09-09</div>
+    </div>
+    <div class="repo">
+      <div class="rh"><h3>dcd887</h3><span class="tag">仓库</span></div>
+      <p>Profile README for dcd887</p>
+      <div class="tps"></div>
+      <div class="meta">2026-10-23</div>
+    </div>
+  </div>
+
+  <footer>
+    本页由 build_projects.py 从 GitHub API 生成，数字与描述均现读仓库，不手工维护。<br>
+    标「线上可访问」的均指向 GitHub Pages；标「开发中」的尚未上线。
+  </footer>
+</div>
+</body>
+</html>
